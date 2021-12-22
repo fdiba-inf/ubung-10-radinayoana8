@@ -17,8 +17,8 @@ public abstract class Figure implements ClickListener {
 
     public abstract String getType();
 
-    public String toString() {
-      return String.format("%s: %s-[%s, %s], %s, P=%s, A=%s", getClass().getSimpleName(), startPoint, side1, side2, getType(), calculatePerimeter(), calculateArea());
+     public String toString() {
+        return String.format("%s: %s-[%s, %s], %s, P=%s, A=%s", getClass().getSimpleName(), startPoint, side1, side2, getType(), calculatePerimeter(), calculateArea());
     }
 
     public void initialize() {

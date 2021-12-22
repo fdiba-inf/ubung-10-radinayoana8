@@ -27,7 +27,7 @@ public class Point {
         return y;
     }
 
-    public void initialize() {
+      public void initialize() {
         System.out.print("Enter x: ");
         x = Utils.INPUT.nextDouble();
         System.out.print("Enter y: ");
@@ -38,7 +38,6 @@ public class Point {
         x = x + xDelta;
         y = y + yDelta;
     }
-
     public Point createNewTranslatedPoint(double xDelta, double yDelta) {
         double newX = x + xDelta;
         double newY = y + yDelta;
@@ -55,3 +54,6 @@ public class Point {
         return "(" + x + ", " + y + ")";
     }
 }
+
+  
+

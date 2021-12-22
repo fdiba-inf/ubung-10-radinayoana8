@@ -10,7 +10,7 @@ public class ClickDemo {
 
         Point clickPoint = new Point();
         clickPoint.initialize();
-
+        
         ClickListener[] clickListeners = new ClickListener[2];
         clickListeners[0] = rectangle;
         clickListeners[1] = ellipse;
