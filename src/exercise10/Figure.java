@@ -18,7 +18,7 @@ public abstract class Figure implements ClickListener {
     public abstract String getType();
 
     public String toString() {
-        return String.format("%s: %s-[%s, %s], %s, P=%s, A=%s", getClass().getSimpleName(), startPoint, side1, side2, getType(), calculatePerimeter(), calculateArea());
+      return String.format("%s: %s-[%s, %s], %s, P=%s, A=%s", getClass().getSimpleName(), startPoint, side1, side2, getType(), calculatePerimeter(), calculateArea());
     }
 
     public void initialize() {
@@ -33,7 +33,7 @@ public abstract class Figure implements ClickListener {
     }
 
     public boolean isValid() {
-        return side1 > 0 && side2 > 0;
+        return side1 > 0 && side2> 0;
     }
 
     public boolean equal(Figure otherFigure) {
@@ -45,3 +45,10 @@ public abstract class Figure implements ClickListener {
         return (sameSide1 && sameSide2) || (sameSide1Reversed && sameSide2Reversed);
     }
 }
+
+
+    
+
+   
+
+   
